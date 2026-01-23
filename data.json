@@ -1,0 +1,53 @@
+{
+  "name": "Rohit Raj",
+  "role": "Software Developer",
+  "headline": "Data + Dashboards • Web Apps • Clean Systems",
+  "summary": "I build dashboard-driven products, clean data pipelines, and responsive web experiences. I focus on measurable impact, strong UI, and maintainable code.",
+  "location": "Pune, India",
+  "email": "rohit@example.com",
+  "links": {
+    "resume": "https://drive.google.com/your-resume-link",
+    "github": "https://github.com/yourhandle",
+    "linkedin": "https://linkedin.com/in/yourhandle"
+  },
+  "highlights": [
+    "Interactive dashboards with filters + KPIs",
+    "Strong in Python • SQL • Dash/Plotly",
+    "Fast, responsive UI + clean code"
+  ],
+  "skills": [
+    { "group": "Frontend", "items": ["HTML", "CSS", "JavaScript"] },
+    { "group": "Data & Visualization", "items": ["Python", "Pandas", "Plotly", "Dash"] },
+    { "group": "Backend", "items": ["REST APIs", "SQL"] },
+    { "group": "Tools", "items": ["Git", "GitLab", "Linux"] }
+  ],
+  "projects": [
+    {
+      "title": "Automobile Sales Dashboard",
+      "oneLiner": "Interactive dashboard showing yearly/monthly trends and recession impact.",
+      "tags": ["Python", "Dash", "Plotly", "DataViz"],
+      "highlights": [
+        "Yearly + monthly analysis with clean layout",
+        "Callback-driven filtering and responsive graphs",
+        "KPI storytelling to explain recession patterns"
+      ],
+      "links": {
+        "repo": "https://github.com/yourhandle/auto-sales-dash",
+        "demo": "https://your-demo-link"
+      }
+    },
+    {
+      "title": "Portfolio Website (Vanilla)",
+      "oneLiner": "Fast portfolio with search, tag filters, and dark mode.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "highlights": [
+        "Projects rendered from JSON (easy updates)",
+        "Search + tag filter for quick scanning",
+        "Responsive layout optimized for recruiters"
+      ],
+      "links": {
+        "repo": "https://github.com/yourhandle/portfolio"
+      }
+    }
+  ]
+}

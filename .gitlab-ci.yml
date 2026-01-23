@@ -1,0 +1,15 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+<<<<<<< HEAD
+    - cp -r . public/
+    - rm -rf public/.git public/.gitlab-ci.yml
+=======
+    - cp index.html styles.css app.js data.json public/
+>>>>>>> d16ce76 (Deploy portfolio website)
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
