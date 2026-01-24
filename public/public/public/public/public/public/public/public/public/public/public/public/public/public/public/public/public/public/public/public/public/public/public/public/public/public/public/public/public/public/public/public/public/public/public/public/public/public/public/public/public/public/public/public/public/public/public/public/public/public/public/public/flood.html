@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Flood Prediction System — Live ML demo" />
+  <title>Flood Prediction — RR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="flood.css" />
+</head>
+
+<body>
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Back to portfolio">RR<span class="dot">•</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#demo">Demo</a>
+        <a href="#inputs">Inputs</a>
+        <a href="#about">Model</a>
+      </nav>
+      <div class="actions">
+        <a class="btn ghost" href="index.html">Back</a>
+        <a class="btn primary" href="#demo">Predict</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="demo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker">ML • Random Forest • API • Flood Severity</p>
+        <h1 class="title">Flood Prediction System</h1>
+        <p class="subtitle">
+          Live demo: enter 11 features (flood event + rainfall T1d–T7d) to get <b>severity</b>, <b>confidence</b>, and an <b>action recommendation</b>.
+        </p>
+
+        <div class="hero-cta">
+          <button class="btn primary" id="sampleBtn" type="button">Load Sample</button>
+          <button class="btn ghost" id="clearBtn" type="button">Clear</button>
+          <span class="pill" id="statusPill">Ready</span>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Strict schema</span>
+          <span class="chip">Confidence gauge</span>
+          <span class="chip">Deployed API</span>
+          <span class="chip">Privacy-first</span>
+        </div>
+
+        <p class="muted small">
+          Tip: If results don’t load, scroll down and check the “Diagnostics” message.
+        </p>
+      </div>
+
+      <!-- OUTPUT CARD -->
+      <div class="hero-right">
+        <div class="card glass">
+          <div class="card-head">
+            <div>
+              <div class="card-title">Prediction Output</div>
+              <div class="muted small" id="diag">API: checking…</div>
+            </div>
+            <div class="badge">LIVE</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="kv">
+            <div class="k">Severity</div>
+            <div class="v" id="severityValue">—</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Gauge -->
+          <div class="gauge-wrap">
+            <div class="kv">
+              <div class="k">Risk Gauge</div>
+              <div class="v" id="riskLabel">—</div>
+            </div>
+
+            <div class="gauge" aria-label="Risk gauge">
+              <div class="gauge-track"></div>
+              <div class="gauge-hole"></div>
+              <div class="gauge-pointer" id="gaugePointer"></div>
+              <div class="gauge-center"></div>
+            </div>
+
+            <div class="gauge-scale">
+              <span>Low</span><span>Medium</span><span>High</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Confidence bar -->
+          <div class="barblock">
+            <div class="kv">
+              <div class="k">Confidence</div>
+              <div class="v" id="confidenceValue">—</div>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" id="confidenceFill" style="width:0%"></div>
+            </div>
+            <div class="muted small" id="confidenceHint">—</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="kv">
+            <div class="k">Recommendation</div>
+            <div class="v v-wrap" id="recommendationValue">—</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INPUTS -->
+    <section class="section" id="inputs">
+      <div class="section-head">
+        <h2>Inputs</h2>
+        <p class="muted">Fill all 11 values. Units: meters/days/mm.</p>
+      </div>
+
+      <div class="card glass">
+        <form id="predictForm" class="form">
+          <div class="grid-2">
+            <label>
+              <span>Peak Flood Level (m)</span>
+              <input name="Peak Flood Level (m)" type="number" step="0.01" required />
+            </label>
+            <label>
+              <span>Event Duration (days)</span>
+              <input name="Event Duration (days)" type="number" step="1" required />
+            </label>
+            <label>
+              <span>Time to Peak (days)</span>
+              <input name="Time to Peak (days)" type="number" step="1" required />
+            </label>
+            <label>
+              <span>Recession Time (day)</span>
+              <input name="Recession Time (day)" type="number" step="1" required />
+            </label>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="grid-3">
+            <label><span>T1d (mm)</span><input name="T1d" type="number" step="0.1" required /></label>
+            <label><span>T2d (mm)</span><input name="T2d" type="number" step="0.1" required /></label>
+            <label><span>T3d (mm)</span><input name="T3d" type="number" step="0.1" required /></label>
+            <label><span>T4d (mm)</span><input name="T4d" type="number" step="0.1" required /></label>
+            <label><span>T5d (mm)</span><input name="T5d" type="number" step="0.1" required /></label>
+            <label><span>T6d (mm)</span><input name="T6d" type="number" step="0.1" required /></label>
+            <label><span>T7d (mm)</span><input name="T7d" type="number" step="0.1" required /></label>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn primary" id="predictBtn" type="submit">Predict</button>
+            <span class="muted small">If API is sleeping, first call may take ~10–20 sec.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <h2>Model Notes</h2>
+        <p class="muted">Explain like an engineer (this helps interviews).</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card glass">
+          <h3><strong>What it does</strong></h3>
+          <ul class="list">
+            <li>Uses 11 features: flood event stats + rainfall cumulative signals.</li>
+            <li>Outputs severity + probability-based confidence + action recommendation.</li>
+            <li>Designed for decision-support style alerts.</li>
+          </ul>
+        </div>
+
+        <div class="card glass">
+          <h3>Skills shown</h3>
+          <div class="chips">
+            <span class="chip">ML inference</span>
+            <span class="chip">API integration</span>
+            <span class="chip">Feature schema</span>
+            <span class="chip">UX + visualization</span>
+          </div>
+          <div class="divider"></div>
+          <p class="muted small">
+            NEXT UPGRADE: 'probability calibration + threshold tuning for earlier warnings'.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="muted small">© <span id="year">2026</span> RR • Flood Prediction</p>
+    </footer>
+  </main>
+
+  <script src="flood.js"></script>
+</body>
+</html>

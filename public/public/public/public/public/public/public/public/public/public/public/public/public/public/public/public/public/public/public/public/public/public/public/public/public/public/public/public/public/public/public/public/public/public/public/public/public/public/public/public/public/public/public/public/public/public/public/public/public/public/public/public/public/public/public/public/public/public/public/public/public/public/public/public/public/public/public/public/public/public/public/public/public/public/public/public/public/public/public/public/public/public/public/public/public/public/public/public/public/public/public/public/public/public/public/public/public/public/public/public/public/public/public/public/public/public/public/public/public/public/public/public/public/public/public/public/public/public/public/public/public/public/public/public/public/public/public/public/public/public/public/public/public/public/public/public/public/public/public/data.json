@@ -1,53 +1,121 @@
 {
-  "name": "Rohit Raj",
-  "role": "Software Developer",
-  "headline": "Data + Dashboards • Web Apps • Clean Systems",
-  "summary": "I build dashboard-driven products, clean data pipelines, and responsive web experiences. I focus on measurable impact, strong UI, and maintainable code.",
-  "location": "Pune, India",
-  "email": "rohit@example.com",
-  "links": {
-    "resume": "https://drive.google.com/your-resume-link",
-    "github": "https://github.com/yourhandle",
-    "linkedin": "https://linkedin.com/in/yourhandle"
+  "profile": {
+    "name": "Rohit Raj",
+    "role": "Developer",
+    "tagline": "I build systems that behave.",
+    "contact": {
+      "email": "rohitg2800@yahoo.com",
+      "gitlab": "https://gitlab.com/rohitg2800",
+      "linkedin": "https://linkedin.com/in/.....?"
+    }
   },
-  "highlights": [
-    "Interactive dashboards with filters + KPIs",
-    "Strong in Python • SQL • Dash/Plotly",
-    "Fast, responsive UI + clean code"
-  ],
-  "skills": [
-    { "group": "Frontend", "items": ["HTML", "CSS", "JavaScript"] },
-    { "group": "Data & Visualization", "items": ["Python", "Pandas", "Plotly", "Dash"] },
-    { "group": "Backend", "items": ["REST APIs", "SQL"] },
-    { "group": "Tools", "items": ["Git", "GitLab", "Linux"] }
-  ],
   "projects": [
     {
-      "title": "Automobile Sales Dashboard",
-      "oneLiner": "Interactive dashboard showing yearly/monthly trends and recession impact.",
-      "tags": ["Python", "Dash", "Plotly", "DataViz"],
-      "highlights": [
-        "Yearly + monthly analysis with clean layout",
-        "Callback-driven filtering and responsive graphs",
-        "KPI storytelling to explain recession patterns"
-      ],
+      "title": "CI/CD Pipeline Project",
+      "description": "Build → test → deploy. No drama. Repeatable releases with clean logs and clear failure points.",
+      "tags": ["CI/CD", "Docker", "APIs"],
       "links": {
-        "repo": "https://github.com/yourhandle/auto-sales-dash",
-        "demo": "https://your-demo-link"
+        "github": "https://github.com/yourusername/your-repo",
+        "live": "https://your-live-demo.com"
       }
     },
     {
-      "title": "Portfolio Website (Vanilla)",
-      "oneLiner": "Fast portfolio with search, tag filters, and dark mode.",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "highlights": [
-        "Projects rendered from JSON (easy updates)",
-        "Search + tag filter for quick scanning",
-        "Responsive layout optimized for recruiters"
-      ],
+      "title": "Flood Prediction (ML)",
+      "description": "Data cleaned, models trained, errors measured honestly, results visualized clearly. Prediction that admits uncertainty.",
+      "tags": ["Pandas", "Sklearn", "Visualization"],
       "links": {
-        "repo": "https://github.com/yourhandle/portfolio"
+        "github": "https://github.com/yourusername/flood-prediction",
+        "report": "https://your-report-link.com"
       }
+    }
+  ],
+  "tiers": [
+    "All",
+    "Foundational Tier",
+    "Intermediate Layer",
+    "Advanced Pillars",
+    "Elite DevOps Summit"
+  ],
+  "cards": [
+    {
+      "tier": "Foundational Tier",
+      "title": "DSA Basics",
+      "description": "Arrays, trees, sorting, linked lists — the scaffolding of clean thinking.",
+      "tags": ["Arrays", "Trees", "Sorting", "Linked Lists", "DSA"],
+      "pillars": true,
+      "links": [{ "label": "Practice", "href": "https://leetcode.com/" }]
+    },
+    {
+      "tier": "Foundational Tier",
+      "title": "Linux / Ubuntu",
+      "description": "Servers, permissions, networking — control the machine without guessing.",
+      "tags": ["Linux", "CLI", "Permissions", "Networking"],
+      "pillars": true,
+      "links": [{ "label": "Linux basics", "href": "https://ubuntu.com/tutorials/command-line-for-beginners" }]
+    },
+    {
+      "tier": "Intermediate Layer",
+      "title": "Python Core",
+      "description": "Exceptions, files, regex — reliability first.",
+      "tags": ["Python", "Exceptions", "File I/O", "Regex"],
+      "pillars": true,
+      "links": []
+    },
+    {
+      "tier": "Intermediate Layer",
+      "title": "Databases",
+      "description": "SQL + NoSQL — store facts, fetch fast.",
+      "tags": ["SQL", "PostgreSQL", "MongoDB", "Indexes"],
+      "pillars": true,
+      "links": []
+    },
+    {
+      "tier": "Advanced Pillars",
+      "title": "Data Science / ML",
+      "description": "Preprocess → train → evaluate. No magic.",
+      "tags": ["Pandas", "NumPy", "Scikit-learn", "Evaluation"],
+      "pillars": true,
+      "links": []
+    },
+    {
+      "tier": "Advanced Pillars",
+      "title": "Visualization",
+      "description": "Make insights visible. Make decisions easier.",
+      "tags": ["Matplotlib", "Seaborn", "Plotly"],
+      "pillars": true,
+      "links": []
+    },
+    {
+      "tier": "Advanced Pillars",
+      "title": "Backend APIs",
+      "description": "FastAPI/Flask services that fail loudly and correctly.",
+      "tags": ["FastAPI", "Flask", "REST", "Validation"],
+      "pillars": true,
+      "links": []
+    },
+    {
+      "tier": "Elite DevOps Summit",
+      "title": "Docker + Kubernetes",
+      "description": "From local builds to cluster behavior.",
+      "tags": ["Docker", "Kubernetes", "Pods", "Deployments"],
+      "pillars": true,
+      "links": []
+    },
+    {
+      "tier": "Elite DevOps Summit",
+      "title": "CI/CD",
+      "description": "Automate the boring. Prevent repeat mistakes.",
+      "tags": ["Jenkins", "GitLab CI", "Pipelines"],
+      "pillars": true,
+      "links": []
+    },
+    {
+      "tier": "Elite DevOps Summit",
+      "title": "AWS Basics",
+      "description": "Cloud fundamentals that scale when needed.",
+      "tags": ["EC2", "S3", "IAM", "Cloud Basics"],
+      "pillars": true,
+      "links": []
     }
   ]
 }

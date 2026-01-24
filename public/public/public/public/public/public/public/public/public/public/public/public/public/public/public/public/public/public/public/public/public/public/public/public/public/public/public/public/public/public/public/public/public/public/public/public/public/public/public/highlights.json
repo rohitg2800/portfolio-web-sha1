@@ -1,0 +1,57 @@
+{
+  "brand": {
+    "name": "Rohit Raj",
+    "role": "MCA • Data + Visualization",
+    "accentGlow": "rgba(91,94,216,0.28)"
+  },
+  "heroHighlights": [
+    { "label": "60fps Motion", "value": "GPU transforms only", "icon": "⚡" },
+    { "label": "Dashboards", "value": "Dash + Plotly", "icon": "📊" },
+    { "label": "Geospatial", "value": "Folium + GeoJSON", "icon": "🗺️" },
+    { "label": "ML Pipelines", "value": "sklearn + Ridge", "icon": "🧠" }
+  ],
+  "spotlight": {
+    "enabled": true,
+    "rotateEveryMs": 2600,
+    "items": [
+      { "title": "Automobile Sales Dashboard", "note": "Interactive filters + recession insights", "sectionId": "projects" },
+      { "title": "Recession Geo Sales Map", "note": "Choropleth storytelling across offices", "sectionId": "projects" },
+      { "title": "ML Price Predictor", "note": "Pipeline + R² evaluation", "sectionId": "projects" },
+      { "title": "Security Quiz", "note": "OWASP basics + input validation", "sectionId": "security" }
+    ]
+  },
+  "sectionHighlights": [
+    {
+      "sectionId": "about",
+      "title": "About",
+      "points": ["Premium UI + fast performance", "Apple-inspired mesh + glass", "Clear storytelling visuals"]
+    },
+    {
+      "sectionId": "projects",
+      "title": "Projects",
+      "points": ["Staggered cards + hover glow", "Modal details + repo links", "60fps transforms only"]
+    },
+    {
+      "sectionId": "skills",
+      "title": "Skills",
+      "points": ["Chips + animated bars", "Dash/Plotly + Python stack", "SQL + ML pipelines"]
+    },
+    {
+      "sectionId": "security",
+      "title": "Security",
+      "points": ["Quiz section (detached)", "Best practices", "Easy to integrate"]
+    },
+    {
+      "sectionId": "contact",
+      "title": "Contact",
+      "points": ["Fast form interactions", "Subtle focus glow", "Clean CTA"]
+    }
+  ],
+  "autoPulse": {
+    "enabled": true,
+    "targets": [
+      { "selector": "#projects .project", "max": 2 },
+      { "selector": "#skills .card", "max": 1 }
+    ]
+  }
+}
