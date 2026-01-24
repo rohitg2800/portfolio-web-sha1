@@ -789,3 +789,7 @@ h2 { margin-bottom: 1rem; }
 
 .skills-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .career-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+
+/* Disabled links (when href missing) */
+.is-disabled{opacity:.45; pointer-events:none; filter:saturate(.6);}

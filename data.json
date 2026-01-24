@@ -6,26 +6,36 @@
     "contact": {
       "email": "rohitg2800@yahoo.com",
       "gitlab": "https://gitlab.com/rohitg2800",
-      "linkedin": "https://linkedin.com/in/.....?"
+      "linkedin": "",
+      "github": "https://github.com/rohitg2800",
+      "portfolio_live": "https://rohit-portfolio-28.netlify.app"
     }
   },
   "projects": [
     {
       "title": "CI/CD Pipeline Project",
-      "description": "Build → test → deploy. No drama. Repeatable releases with clean logs and clear failure points.",
-      "tags": ["CI/CD", "Docker", "APIs"],
+      "description": "Build \u2192 test \u2192 deploy. No drama. Repeatable releases with clean logs and clear failure points.",
+      "tags": [
+        "CI/CD",
+        "Docker",
+        "APIs"
+      ],
       "links": {
-        "github": "https://github.com/yourusername/your-repo",
-        "live": "https://your-live-demo.com"
+        "github": "https://github.com/rohitg2800/portfolio-web-sha1/",
+        "live": "https://rohit-portfolio-28.netlify.app"
       }
     },
     {
       "title": "Flood Prediction (ML)",
       "description": "Data cleaned, models trained, errors measured honestly, results visualized clearly. Prediction that admits uncertainty.",
-      "tags": ["Pandas", "Sklearn", "Visualization"],
+      "tags": [
+        "Pandas",
+        "Sklearn",
+        "Visualization"
+      ],
       "links": {
-        "github": "https://github.com/yourusername/flood-prediction",
-        "report": "https://your-report-link.com"
+        "github": "https://github.com/rohitg2800/portfolio-web-sha1/",
+        "report": ""
       }
     }
   ],
@@ -40,40 +50,76 @@
     {
       "tier": "Foundational Tier",
       "title": "DSA Basics",
-      "description": "Arrays, trees, sorting, linked lists — the scaffolding of clean thinking.",
-      "tags": ["Arrays", "Trees", "Sorting", "Linked Lists", "DSA"],
+      "description": "Arrays, trees, sorting, linked lists \u2014 the scaffolding of clean thinking.",
+      "tags": [
+        "Arrays",
+        "Trees",
+        "Sorting",
+        "Linked Lists",
+        "DSA"
+      ],
       "pillars": true,
-      "links": [{ "label": "Practice", "href": "https://leetcode.com/" }]
+      "links": [
+        {
+          "label": "Practice",
+          "href": "https://leetcode.com/"
+        }
+      ]
     },
     {
       "tier": "Foundational Tier",
       "title": "Linux / Ubuntu",
-      "description": "Servers, permissions, networking — control the machine without guessing.",
-      "tags": ["Linux", "CLI", "Permissions", "Networking"],
+      "description": "Servers, permissions, networking \u2014 control the machine without guessing.",
+      "tags": [
+        "Linux",
+        "CLI",
+        "Permissions",
+        "Networking"
+      ],
       "pillars": true,
-      "links": [{ "label": "Linux basics", "href": "https://ubuntu.com/tutorials/command-line-for-beginners" }]
+      "links": [
+        {
+          "label": "Linux basics",
+          "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+        }
+      ]
     },
     {
       "tier": "Intermediate Layer",
       "title": "Python Core",
-      "description": "Exceptions, files, regex — reliability first.",
-      "tags": ["Python", "Exceptions", "File I/O", "Regex"],
+      "description": "Exceptions, files, regex \u2014 reliability first.",
+      "tags": [
+        "Python",
+        "Exceptions",
+        "File I/O",
+        "Regex"
+      ],
       "pillars": true,
       "links": []
     },
     {
       "tier": "Intermediate Layer",
       "title": "Databases",
-      "description": "SQL + NoSQL — store facts, fetch fast.",
-      "tags": ["SQL", "PostgreSQL", "MongoDB", "Indexes"],
+      "description": "SQL + NoSQL \u2014 store facts, fetch fast.",
+      "tags": [
+        "SQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Indexes"
+      ],
       "pillars": true,
       "links": []
     },
     {
       "tier": "Advanced Pillars",
       "title": "Data Science / ML",
-      "description": "Preprocess → train → evaluate. No magic.",
-      "tags": ["Pandas", "NumPy", "Scikit-learn", "Evaluation"],
+      "description": "Preprocess \u2192 train \u2192 evaluate. No magic.",
+      "tags": [
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Evaluation"
+      ],
       "pillars": true,
       "links": []
     },
@@ -81,7 +127,11 @@
       "tier": "Advanced Pillars",
       "title": "Visualization",
       "description": "Make insights visible. Make decisions easier.",
-      "tags": ["Matplotlib", "Seaborn", "Plotly"],
+      "tags": [
+        "Matplotlib",
+        "Seaborn",
+        "Plotly"
+      ],
       "pillars": true,
       "links": []
     },
@@ -89,7 +139,12 @@
       "tier": "Advanced Pillars",
       "title": "Backend APIs",
       "description": "FastAPI/Flask services that fail loudly and correctly.",
-      "tags": ["FastAPI", "Flask", "REST", "Validation"],
+      "tags": [
+        "FastAPI",
+        "Flask",
+        "REST",
+        "Validation"
+      ],
       "pillars": true,
       "links": []
     },
@@ -97,7 +152,12 @@
       "tier": "Elite DevOps Summit",
       "title": "Docker + Kubernetes",
       "description": "From local builds to cluster behavior.",
-      "tags": ["Docker", "Kubernetes", "Pods", "Deployments"],
+      "tags": [
+        "Docker",
+        "Kubernetes",
+        "Pods",
+        "Deployments"
+      ],
       "pillars": true,
       "links": []
     },
@@ -105,7 +165,11 @@
       "tier": "Elite DevOps Summit",
       "title": "CI/CD",
       "description": "Automate the boring. Prevent repeat mistakes.",
-      "tags": ["Jenkins", "GitLab CI", "Pipelines"],
+      "tags": [
+        "Jenkins",
+        "GitLab CI",
+        "Pipelines"
+      ],
       "pillars": true,
       "links": []
     },
@@ -113,7 +177,12 @@
       "tier": "Elite DevOps Summit",
       "title": "AWS Basics",
       "description": "Cloud fundamentals that scale when needed.",
-      "tags": ["EC2", "S3", "IAM", "Cloud Basics"],
+      "tags": [
+        "EC2",
+        "S3",
+        "IAM",
+        "Cloud Basics"
+      ],
       "pillars": true,
       "links": []
     }
