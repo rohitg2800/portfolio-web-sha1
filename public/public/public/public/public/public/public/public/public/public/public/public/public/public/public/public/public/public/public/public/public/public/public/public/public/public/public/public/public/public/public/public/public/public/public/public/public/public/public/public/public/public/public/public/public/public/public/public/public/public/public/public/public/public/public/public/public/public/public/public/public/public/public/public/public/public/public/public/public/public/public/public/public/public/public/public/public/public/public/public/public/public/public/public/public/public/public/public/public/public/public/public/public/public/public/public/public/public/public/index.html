@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Rohit Raj — Portfolio</title>
+  <meta name="description" content="Rohit Raj — Projects, skills, and contact." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true" id="avatar">R</div>
+        <div class="brand-text">
+          <div class="brand-name" id="name">Your Name</div>
+          <div class="brand-sub" id="headline">Your headline</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" class="btn btn-ghost" type="button" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="hero-title">
+            <span id="heroName">Your Name</span>
+            <span class="dot">•</span>
+            <span id="heroRole">Software Developer</span>
+          </h1>
+
+          <p class="hero-desc" id="summary">
+            I build dashboards, web apps, and clean systems.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" id="resumeLink" href="#" target="_blank" rel="noreferrer">Resume</a>
+            <a class="btn btn-ghost" id="githubLink" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn-ghost" id="linkedinLink" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="pill" id="location">📍 Pune, India</span>
+            <a class="pill" id="emailLink" href="mailto:you@example.com">✉️ you@example.com</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Highlights</div>
+          <ul class="list" id="highlightsList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Search + tag filter.</p>
+        </div>
+
+        <div class="toolbar">
+          <input id="search" class="input" type="search" placeholder="Search (Dash, SQL, JS)..." />
+          <select id="tagFilter" class="select"></select>
+          <button id="clearBtn" class="btn btn-ghost" type="button">Clear</button>
+        </div>
+
+        <div id="projectsGrid" class="grid"></div>
+        <div id="emptyState" class="empty-state hidden">No matching projects.</div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+        </div>
+        <div id="skillsGrid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="card contact-card">
+          <div class="contact-row">
+            <div>
+              <div class="muted">Email</div>
+              <a id="contactEmail" href="mailto:you@example.com">you@example.com</a>
+            </div>
+            <div>
+              <div class="muted">Links</div>
+              <div class="contact-links">
+                <a id="contactGitHub" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                <a id="contactLinkedIn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a id="contactResume" href="#" target="_blank" rel="noreferrer">Resume</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="copy-row">
+            <button class="btn btn-primary" type="button" id="copyEmailBtn">Copy Email</button>
+            <span id="copyStatus" class="muted" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> <span id="footerName">Your Name</span></span>
+      <span class="muted">HTML • CSS • JS</span>
+    </div>
+  </footer>
+
+  <script defer src="app.js"></script>
+</body>
+</html>
